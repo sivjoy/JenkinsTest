@@ -1,0 +1,13 @@
+<suite name="Firefox">
+
+	<listeners>
+		<listener class-name="listeners.TestngListener" />
+	</listeners>
+	
+	<test name="FirstRun">
+		<classes>
+			<class name="com.baseTest.FirefoxTest" />
+		</classes>
+	</test>
+
+</suite>	
