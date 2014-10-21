@@ -1,6 +1,5 @@
 package com.baseTest;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -17,8 +16,9 @@ public class OpenChromeTest extends BaseClass{
 	@Test
 	public void printStatement() throws InterruptedException	{
 		driver = new ChromeDriver();
+		logger.info("Started Chrome Browser");
 		driver.get("http://www.bing.com");
-		driver.findElement(By.className("sdfdfdfdf")).click();
+		logger.info("Logged into bing page.");
 		Thread.sleep(5000);
 	}
 	
